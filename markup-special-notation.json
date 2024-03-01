@@ -1,0 +1,38 @@
+[
+  [
+    "/<= decided/g",
+    "<= <span class=\"decided\">decided</span>"
+  ],
+  [
+    "/<= select/g",
+    "<= <span class=\"select\">select</span>"
+  ],
+  [
+    "/<= point/g",
+    "<= <span class=\"point\">point</span>"
+  ],
+  [
+    "/=> theme/g",
+    "=> <span class=\"theme\">theme</span>"
+  ],
+  [
+    "/=> desire/g",
+    "=> <span class=\"desire\">desire</span>"
+  ],
+  [
+    "/=> key item/g",
+    "=> <span class=\"key-item\">key item</span>"
+  ],
+  [
+    "/<=/g",
+    "<span class=\"arrow\">&lt;=</span>"
+  ],
+  [
+    "/=>/g",
+    "<span class=\"arrow\">=&gt;</span>"
+  ],
+  [
+    "/(\\{|\\})/g",
+    "<span class=\"brace\">$1</span>"
+  ]
+]

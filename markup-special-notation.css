@@ -1,0 +1,20 @@
+span.decided {
+  color: #f92672;
+}
+span.select {
+  color: #a6e22e;
+}
+span.point {
+  color: #f0d352;
+}
+span.theme,
+span.desire,
+span.key-item {
+  color: #ae81ff;
+}
+span.arrow {
+  color: #66d9ef;
+}
+span.brace {
+  color: #f92672;
+}
