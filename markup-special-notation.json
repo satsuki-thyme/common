@@ -1,5 +1,9 @@
 [
   [
+    "/([0-9a-zA-Z][0-9a-zA-Z ]*(?=[0-9])[0-9a-zA-Z ]*[0-9a-zA-Z])/g",
+    "<span class=\"number\">$1</span>"
+  ],
+  [
     "/<= decided/g",
     "<= <span class=\"decided\">decided</span>"
   ],
