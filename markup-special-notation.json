@@ -1,5 +1,9 @@
 [
   [
+    "/(?<=<span class=\"value\">)(\\..*?)(?=<\\/span>)/g",
+    "<span class=\"pale\">$1</span>"
+  ],
+  [
     "/([a-zA-Z]+ ?[0-9]+ ?[a-zA-Z]*|[a-zA-Z]* ?[0-9]+ ?[a-zA-Z]+)/g",
     "<span class=\"number\">$1</span>"
   ],
