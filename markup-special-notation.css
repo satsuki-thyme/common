@@ -13,6 +13,11 @@ span.desire,
 span.key-item {
   color: #ae81ff;
 }
+span.arrow,
+span.brace {
+  font-family: monospace;
+  font-weight: bold;
+}
 span.arrow {
   color: #66d9ef;
 }
