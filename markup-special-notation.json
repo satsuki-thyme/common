@@ -4,7 +4,7 @@
     "<span class=\"pale\">$1</span>"
   ],
   [
-    "/([a-zA-Z]+ ?[0-9]+ ?[a-zA-Z]*|[a-zA-Z]* ?[0-9]+ ?[a-zA-Z]+)/g",
+    "/^(?=.*?)(?<!h[1-6])((([a-z\\-]+ ?)+[0-9]+([a-z\\-]+ ?)*)|(([a-z\\-]+ ?)*[0-9]+([a-z\\-]+ ?)+))/g",
     "<span class=\"number\">$1</span>"
   ],
   [
@@ -20,16 +20,8 @@
     "<= <span class=\"point\">point</span>"
   ],
   [
-    "/=> theme/g",
-    "=> <span class=\"theme\">theme</span>"
-  ],
-  [
-    "/=> desire/g",
-    "=> <span class=\"desire\">desire</span>"
-  ],
-  [
-    "/=> key item/g",
-    "=> <span class=\"key-item\">key item</span>"
+    "/=> (foreshadowing|character theme|information|love theme|ordeal|past|key item|mid point|plot point)/g",
+    "=> <span class=\"mean\">$1<span>"
   ],
   [
     "/<=/g",
@@ -42,5 +34,21 @@
   [
     "/(\\{|\\})/g",
     "<span class=\"brace\">$1</span>"
+  ],
+  [
+    "/(?<!_)_(?!_)(.*?)(?<!_)_(?!_)|(?<!\\*)\\*(?!\\*)(.*?)(?<!\\*)\\*(?!\\*)/g",
+    "<em>$1$2</em>"
+  ],
+  [
+    "/(?<!_)__(?!_)(.*?)(?<!_)__(?!_)|(?<!\\*)\\*\\*(?!\\*)(.*?)(?<!\\*)\\*\\*(?!\\*)/g",
+    "<strong>$1$2</strong>"
+  ],
+  [
+    "/(?<!_)___(?!_)(.*?)(?<!_)___(?!_)|(?<!\\*)\\*\\*\\*(?!\\*)(.*?)(?<!\\*)\\*\\*\\*(?!\\*)/g",
+    "<strong><em>$1$2</em></strong>"
+  ],
+  [
+    "/(?<=<em>.*?)([\\p{scx=Hiragana}\\p{scx=Katakana}\\p{scx=Han}]+)(?=.*?<\\/em>)/gu",
+    "<span class=\"jp-oblique\">$1</span>"
   ]
 ]

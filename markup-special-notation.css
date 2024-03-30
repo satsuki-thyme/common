@@ -1,3 +1,21 @@
+em {
+  font-style: italic;
+  color: #66d9ef;
+}
+strong {
+  font-weight: bold;
+  color: #66d9ef;
+}
+strong em {
+  font-style: italic;
+  font-weight: bold;
+  color: #66d9ef;
+}
+span.jp-oblique {
+  display: inline-block;
+  transform: skewX(350deg);
+  font-weight: 500;
+}
 span.decided {
   color: #f92672;
 }
@@ -8,9 +26,7 @@ span.point {
   color: #f0d352;
 }
 span.number,
-span.theme,
-span.desire,
-span.key-item {
+span.mean {
   color: #ae81ff;
 }
 span.arrow,
